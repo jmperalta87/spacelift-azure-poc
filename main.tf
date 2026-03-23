@@ -39,3 +39,12 @@ resource "azurerm_linux_web_app" "webapp" {
     ApplicationName  = var.application_name
   }
 }
+
+# Test resource - missing tags on purpose
+resource "azurerm_service_plan" "test_no_tags" {
+  name                = "asp-test-no-tags"
+  resource_group_name = azurerm_resource_group.rg.name
+  location            = azurerm_resource_group.rg.location
+  os_type             = "Linux"
+  sku_name            = "F1"
+}
