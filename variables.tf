@@ -13,11 +13,9 @@ variable "location" {
 variable "application_name" {
   description = "Name of the Application"
   type        = string
-  default     = "SpaceLift"
 }
 
 variable "application_owner" {
   description = "Name of the Owner"
   type        = string
-  default     = "DevOps Team"
 }
