@@ -9,6 +9,7 @@ terraform {
 
 provider "azurerm" {
   features {}
+  use_oidc = true
 }
 
 # Reference the existing Resource Group (managed by Stack 1)
