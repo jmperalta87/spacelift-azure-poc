@@ -19,3 +19,8 @@ variable "application_owner" {
   description = "Name of the Owner"
   type        = string
 }
+
+variable "webapp_name" {
+  description = "Globally unique name for the Web App"
+  type        = string
+}
