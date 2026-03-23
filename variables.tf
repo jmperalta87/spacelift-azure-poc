@@ -1,6 +1,7 @@
 variable "resource_group_name" {
-  description = "SpaceLift-PoC"
+  description = "Name of the resource Group"
   type        = string
+  default     = "SpaceLift-PoC"
 }
 
 variable "location" {
@@ -10,11 +11,13 @@ variable "location" {
 }
 
 variable "application_name" {
-  description = "SpaceLift"
+  description = "Name of the Application"
   type        = string
+  default     = "SpaceLift"
 }
 
 variable "application_owner" {
-  description = "DevOps Team"
+  description = "Name of the Owner"
   type        = string
+  default     = "DevOps Team"
 }
